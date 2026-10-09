@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, type KeyboardEvent } from "react";
 import Link from "next/link";
+import { ChevronDown, X } from "lucide-react";
 import { usePathname } from "next/navigation";
 
 const navigation = [
@@ -40,21 +41,29 @@ export function MobileNavigation() {
     <details
       ref={menuRef}
       onKeyDown={handleKeyDown}
-      className="relative lg:hidden"
+      className="group relative lg:hidden"
     >
-      <summary className="cursor-pointer list-none rounded-full border border-[#d7d3c9] bg-white/80 px-4 py-2 text-sm font-medium text-[#202720] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-700">
-        Ver páginas
+      <summary className="flex min-h-10 cursor-pointer list-none items-center gap-2 rounded-xl bg-[#202720] px-3.5 py-2 text-sm font-semibold text-white transition hover:bg-[#00b8bf] hover:text-[#10282a] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00b8bf] [&::-webkit-details-marker]:hidden">
+        <span className="group-open:hidden">Secciones</span>
+        <span className="hidden group-open:inline">Cerrar</span>
+        <ChevronDown aria-hidden="true" className="h-4 w-4 transition-transform group-open:hidden" />
+        <X aria-hidden="true" className="hidden h-4 w-4 group-open:block" />
       </summary>
       <nav
         aria-label="Páginas de ARNOLDCODE"
-        className="absolute right-0 top-12 z-50 flex min-w-52 flex-col gap-1 rounded-2xl border border-[#e5e1d7] bg-[#fffdf8] p-2 text-sm text-[#3f4941] shadow-xl shadow-[#766f5e]/10"
+        className="absolute right-0 top-12 z-50 flex min-w-56 flex-col gap-1 rounded-2xl border border-[#e5e1d7] bg-[#fffdf8] p-2 text-sm text-[#3f4941] shadow-xl shadow-[#766f5e]/10"
       >
         {navigation.map((item) => (
           <Link
             key={item.href}
             href={item.href}
             onClick={closeMenu}
-            className="rounded-xl px-3 py-2 transition hover:bg-[#f0ede4]"
+            aria-current={pathname === item.href ? "page" : undefined}
+            className={`rounded-xl px-3 py-2.5 transition hover:bg-[#f0ede4] ${
+              pathname === item.href
+                ? "bg-[#e8f8f7] font-semibold text-[#202720]"
+                : ""
+            }`}
           >
             {item.label}
           </Link>
@@ -62,7 +71,7 @@ export function MobileNavigation() {
         <Link
           href="/contacto#contact"
           onClick={closeMenu}
-          className="mt-1 rounded-xl bg-emerald-700 px-3 py-2 font-medium text-white"
+          className="mt-1 rounded-xl bg-[#202720] px-3 py-2.5 font-semibold text-white transition hover:bg-[#00b8bf] hover:text-[#10282a]"
         >
           Describir el problema
         </Link>

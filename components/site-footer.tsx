@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import { landingCopy } from "@/content/copy";
@@ -20,9 +21,16 @@ export function SiteFooter() {
         <div>
           <Link
             href="/"
-            className="text-lg font-semibold tracking-[-0.04em] text-[#202720]"
+            aria-label="ArnoldCode, inicio"
+            className="block w-[210px]"
           >
-            ARNOLDCODE
+            <Image
+              src="/arnoldcode-logo.png"
+              alt="ArnoldCode"
+              width={310}
+              height={48}
+              className="h-auto w-full"
+            />
           </Link>
           <p className="mt-2 max-w-md text-sm leading-7 text-[#5f685f]">
             {footer.tagline}

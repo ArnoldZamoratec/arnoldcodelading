@@ -1,5 +1,9 @@
+"use client";
+
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { usePathname } from "next/navigation";
 import { MobileNavigation } from "@/components/mobile-navigation";
 
 const navigation = [
@@ -11,14 +15,24 @@ const navigation = [
 ];
 
 export function SiteHeader() {
+  const pathname = usePathname();
+
   return (
-    <header className="sticky top-0 z-50 border-b border-[#e5e1d7] bg-[#fbfaf5]/95 backdrop-blur-md">
-      <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-4 py-3 sm:px-6 md:px-10 lg:px-12">
+    <header className="sticky top-0 z-50 border-b border-[#e5e1d7] bg-[#fbfaf5]/95 backdrop-blur-xl">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-2.5 sm:px-6 md:px-10 lg:px-12">
         <Link
           href="/"
-          className="text-lg font-semibold tracking-[-0.05em] text-[#202720]"
+          aria-label="ArnoldCode, inicio"
+          className="block w-[140px] shrink-0 min-[375px]:w-[170px] sm:w-[210px] lg:w-[230px]"
         >
-          ARNOLDCODE
+          <Image
+            src="/arnoldcode-logo.png"
+            alt="ArnoldCode"
+            width={310}
+            height={48}
+            priority
+            className="h-auto w-full"
+          />
         </Link>
 
         <nav
@@ -29,7 +43,12 @@ export function SiteHeader() {
             <Link
               key={item.href}
               href={item.href}
-              className="transition hover:text-[#202720]"
+              aria-current={pathname === item.href ? "page" : undefined}
+              className={`relative py-2 transition hover:text-[#202720] after:absolute after:inset-x-0 after:-bottom-[13px] after:h-0.5 after:origin-left after:scale-x-0 after:bg-[#00cbd1] after:transition-transform hover:after:scale-x-100 ${
+                pathname === item.href
+                  ? "font-semibold text-[#202720] after:scale-x-100"
+                  : ""
+              }`}
             >
               {item.label}
             </Link>
@@ -40,7 +59,7 @@ export function SiteHeader() {
 
         <Link
           href="/contacto#contact"
-          className="hidden items-center gap-2 rounded-full border border-[#d7e7d9] bg-white/70 px-4 py-2 text-sm font-medium text-[#202720] transition hover:border-emerald-600 sm:inline-flex"
+          className="hidden items-center gap-2 rounded-xl bg-[#202720] px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-[#00b8bf] hover:text-[#10282a] sm:inline-flex"
         >
           Describir el problema
           <ArrowRight aria-hidden="true" className="h-4 w-4" />

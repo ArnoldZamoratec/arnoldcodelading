@@ -23,7 +23,7 @@ export default function OG() {
           fontFamily: "sans-serif",
         }}
       >
-        <div style={{ fontSize: 28, color: "#15803d", letterSpacing: 3, marginBottom: 20 }}>
+        <div style={{ fontSize: 28, color: "#00b8bf", letterSpacing: 3, marginBottom: 20 }}>
           ARNOLDCODE
         </div>
         <div style={{ fontSize: 72, fontWeight: 700, lineHeight: 1.05 }}>

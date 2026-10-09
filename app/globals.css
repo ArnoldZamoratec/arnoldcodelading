@@ -6,8 +6,8 @@
   --surface-strong: #f0ede4;
   --foreground: #202720;
   --muted: #5f685f;
-  --accent: #15803d;
-  --accent-soft: rgba(21, 128, 61, 0.1);
+  --accent: #00b8bf;
+  --accent-soft: rgba(0, 184, 191, 0.12);
   --border: #e5e1d7;
 }
 
@@ -17,6 +17,12 @@
   --font-sans: var(--font-dm-sans);
   --font-display: var(--font-sora);
   --font-mono: var(--font-geist-mono);
+  --color-emerald-50: #e8f8f7;
+  --color-emerald-600: #078f96;
+  --color-emerald-700: #087c82;
+  --color-emerald-800: #06666d;
+  --color-emerald-900: #064f55;
+  --color-emerald-950: #123d40;
 }
 
 html {
@@ -63,7 +69,7 @@ h3 {
 }
 
 ::selection {
-  background: rgba(21, 128, 61, 0.2);
+  background: rgba(0, 184, 191, 0.2);
   color: #202720;
 }
 

@@ -41,7 +41,52 @@ export const landingCopy = {
       "Ayudo a startups y empresas con producto en marcha a modernizar su stack, aclarar decisiones técnicas y recuperar velocidad sin convertir la ingeniería en una amenaza.",
     cta_primary: "Agendar llamada",
     cta_secondary: "Ver servicios",
-    trust_label: "Confían en el trabajo directo",
+    trust_label: "Áreas de intervención",
+  },
+  home: {
+    pages_title: "Explora ARNOLDCODE",
+    pages_description:
+      "Conoce cada área de trabajo, cómo colaboro con los equipos y cuál es el siguiente paso para tu situación.",
+    pages: [
+      {
+        title: "Servicios",
+        eyebrow: "Qué puedo resolver",
+        description:
+          "Arquitectura, auditoría técnica y liderazgo senior alineados con las prioridades de tu producto.",
+        href: "/servicios",
+      },
+      {
+        title: "Metodología",
+        eyebrow: "Cómo trabajo",
+        description:
+          "Un proceso claro para entender el problema, priorizar por impacto y ejecutar con el equipo.",
+        href: "/metodologia",
+      },
+      {
+        title: "Escenarios",
+        eyebrow: "Dónde aporto valor",
+        description:
+          "Ejemplos de retos técnicos habituales y de los objetivos que una intervención puede perseguir.",
+        href: "/casos",
+      },
+      {
+        title: "Sobre mí",
+        eyebrow: "Quién lidera el trabajo",
+        description:
+          "Conoce a Arnold y su enfoque directo de ingeniería, arquitectura y liderazgo técnico.",
+        href: "/sobre-mi",
+      },
+      {
+        title: "Contacto",
+        eyebrow: "Conversemos",
+        description:
+          "Comparte el contexto de tu equipo y revisemos cuál sería el siguiente paso más útil.",
+        href: "/contacto",
+      },
+    ],
+    cta_title: "¿No sabes por dónde empezar?",
+    cta_description:
+      "Cuéntame qué está frenando al equipo. La primera conversación sirve para entender el contexto y evaluar opciones.",
   },
   trust_bar: {
     items: ["Arquitectura", "Modernización legacy", "CTO fractional", "Code review", "Performance", "Delivery"],

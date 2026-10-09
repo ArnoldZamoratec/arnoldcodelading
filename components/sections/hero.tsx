@@ -21,7 +21,7 @@ export function HeroSection() {
           transition={{ duration: 0.5, ease: "easeOut" }}
           className="relative z-10"
         >
-          <h1 className="max-w-xl text-4xl font-semibold tracking-[-0.06em] text-[#202720] sm:text-5xl lg:text-7xl">
+          <h1 className="max-w-xl text-[clamp(1.875rem,8vw,3rem)] font-semibold tracking-[-0.06em] text-[#202720] sm:text-5xl lg:text-7xl">
             {hero.headline_v1}
           </h1>
 

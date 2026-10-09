@@ -43,10 +43,10 @@ export function MobileNavigation() {
       className="relative lg:hidden"
     >
       <summary className="cursor-pointer list-none rounded-full border border-[#d7d3c9] bg-white/80 px-4 py-2 text-sm font-medium text-[#202720] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-700">
-        Menú
+        Ver páginas
       </summary>
       <nav
-        aria-label="Navegación móvil"
+        aria-label="Páginas de ARNOLDCODE"
         className="absolute right-0 top-12 z-50 flex min-w-52 flex-col gap-1 rounded-2xl border border-[#e5e1d7] bg-[#fffdf8] p-2 text-sm text-[#3f4941] shadow-xl shadow-[#766f5e]/10"
       >
         {navigation.map((item) => (

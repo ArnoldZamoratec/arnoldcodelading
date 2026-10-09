@@ -1,26 +1,85 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f8f6ef;
+  --surface: #fffdf8;
+  --surface-strong: #f0ede4;
+  --foreground: #202720;
+  --muted: #5f685f;
+  --accent: #15803d;
+  --accent-soft: rgba(21, 128, 61, 0.1);
+  --border: #e5e1d7;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-manrope);
+  --font-display: var(--font-space-grotesk);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
 }
 
 body {
-  background: var(--background);
+  background:
+    radial-gradient(circle at 50% 0%, rgba(21, 128, 61, 0.08), transparent 30%),
+    linear-gradient(180deg, #fbfaf5 0%, #f5f2e9 100%);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-manrope), Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-optical-sizing: auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-space-grotesk), var(--font-manrope), sans-serif;
+  font-optical-sizing: auto;
+  text-wrap: balance;
+}
+
+h1 {
+  font-weight: 700;
+  letter-spacing: -0.065em;
+  line-height: 1.02;
+}
+
+h2 {
+  font-weight: 650;
+  letter-spacing: -0.055em;
+  line-height: 1.08;
+}
+
+h3 {
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 1.2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: rgba(21, 128, 61, 0.2);
+  color: #202720;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+summary::-webkit-details-marker {
+  display: none;
 }

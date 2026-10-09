@@ -33,7 +33,6 @@ export const positioning = {
 
 export const landingCopy = {
   hero: {
-    eyebrow: "Consultoría técnica boutique para equipos con presión",
     headline_v1: "Detengo la deuda técnica que está frenando el crecimiento.",
     headline_v2: "Diseño sistemas más simples, más seguros y más rápidos.",
     headline_v3: "Lidero la arquitectura que tu equipo necesita para escalar sin caos.",

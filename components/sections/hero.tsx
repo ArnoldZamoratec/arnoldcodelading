@@ -21,11 +21,6 @@ export function HeroSection() {
           transition={{ duration: 0.5, ease: "easeOut" }}
           className="relative z-10"
         >
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-emerald-800/15 bg-emerald-50 px-3 py-1 text-xs font-medium tracking-[0.12em] text-emerald-800 uppercase">
-            <span className="h-2 w-2 rounded-full bg-emerald-600" />
-            {hero.eyebrow}
-          </div>
-
           <h1 className="max-w-xl text-4xl font-semibold tracking-[-0.06em] text-[#202720] sm:text-5xl lg:text-7xl">
             {hero.headline_v1}
           </h1>

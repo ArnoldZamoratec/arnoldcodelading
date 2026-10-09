@@ -8,7 +8,7 @@ import { FAQSection } from "@/components/sections/faq";
 export const metadata: Metadata = {
   title: "Contacto",
   description:
-    "Cuéntame qué está frenando la entrega de tu equipo y coordinemos una conversación técnica inicial.",
+    "Describe una entrega demorada, una incidencia repetida o una decisión de arquitectura pendiente. Arnold revisará la solicitud y el contexto.",
 };
 
 export default function ContactPage() {
@@ -16,28 +16,29 @@ export default function ContactPage() {
     <main>
       <PageIntro
         eyebrow="Contacto"
-        title="Empecemos por entender qué está pasando."
-        description="Comparte el contexto de tu producto y del equipo. Revisaremos el problema, su prioridad y cuál sería el siguiente paso más útil."
+        title="Cuéntame qué cambio se está atascando."
+        description="Incluye qué querían entregar, qué partes del sistema están implicadas y qué intentaron hasta ahora. No envíes información confidencial."
       />
       <section className="mx-auto grid max-w-7xl gap-10 px-6 py-16 md:px-10 lg:grid-cols-[0.8fr_1.2fr] lg:px-12 lg:py-20">
         <div className="space-y-6">
           <div>
             <p className="text-sm font-medium uppercase tracking-[0.18em] text-emerald-800">
-              Una primera conversación
+              Información útil para evaluar el alcance
             </p>
             <h2 className="mt-4 text-3xl font-semibold tracking-[-0.05em] text-[#202720]">
-              Contexto antes que pitch.
+              Un ejemplo concreto ayuda más que una presentación.
             </h2>
           </div>
           <p className="leading-7 text-[#5f685f]">
-            No necesitas llegar con una solución definida. Cuéntame qué cambió,
-            qué se está volviendo más difícil y qué necesita el negocio del área
-            técnica.
+            Explica el flujo afectado y su impacto en el producto: usuarios
+            bloqueados, release aplazado, operación manual o errores que
+            reaparecen. No incluyas credenciales, datos personales ni código
+            propietario.
           </p>
           <ul className="space-y-3 text-sm leading-6 text-[#3f4941]">
-            <li>Conversación inicial, sin compromiso.</li>
-            <li>Revisión del contexto y de las prioridades actuales.</li>
-            <li>Próximos pasos claros si existe un buen encaje.</li>
+            <li>Qué intentaba hacer el usuario o el equipo.</li>
+            <li>Qué servicios, módulos o despliegues están involucrados.</li>
+            <li>Qué resultado del negocio o de operación está afectado.</li>
           </ul>
         </div>
         <ContactForm />

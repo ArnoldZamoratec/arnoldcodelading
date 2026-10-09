@@ -42,7 +42,7 @@ export function SiteHeader() {
           href="/contacto#contact"
           className="hidden items-center gap-2 rounded-full border border-[#d7e7d9] bg-white/70 px-4 py-2 text-sm font-medium text-[#202720] transition hover:border-emerald-600 sm:inline-flex"
         >
-          Agendar llamada
+          Describir el problema
           <ArrowRight aria-hidden="true" className="h-4 w-4" />
         </Link>
       </div>

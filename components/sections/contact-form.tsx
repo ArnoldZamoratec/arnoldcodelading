@@ -72,7 +72,7 @@ export function ContactForm() {
     <div id="contact" className="scroll-mt-24 rounded-[2rem] border border-[#e5e1d7] bg-[#fffdf8] p-6 shadow-sm shadow-[#766f5e]/5 md:p-8">
       <div className="mb-6">
         <p className="text-sm font-medium uppercase tracking-[0.18em] text-emerald-800">Contacto</p>
-        <h3 className="mt-3 text-2xl font-semibold text-[#202720]">Agenda una llamada</h3>
+        <h3 className="mt-3 text-2xl font-semibold text-[#202720]">Cuéntame el contexto técnico</h3>
       </div>
 
       <form
@@ -152,7 +152,7 @@ export function ContactForm() {
         </div>
 
         <label className="space-y-2 text-sm text-[#3f4941]">
-          Qué está pasando
+          ¿Qué cambio, entrega o incidencia está atascada?
           <textarea
             {...register("message")}
             id="contact-message"
@@ -161,7 +161,7 @@ export function ContactForm() {
             aria-invalid={Boolean(errors.message)}
             aria-describedby={errors.message ? "contact-message-error" : undefined}
             className="w-full rounded-xl border border-[#d7d3c9] bg-white px-3 py-2.5 text-[#202720] outline-none placeholder:text-[#858b82] focus:border-emerald-700 focus:ring-2 focus:ring-emerald-700/15"
-            placeholder="Cuéntame qué está bloqueando la entrega, qué te preocupa y qué te gustaría resolver."
+            placeholder="Qué se intentaba entregar, qué parte del sistema intervino, qué ocurrió y qué impacto tiene. No incluyas datos confidenciales."
           />
           {errors.message ? <span id="contact-message-error" className="block text-xs text-red-700">{errors.message.message}</span> : null}
         </label>
@@ -171,7 +171,7 @@ export function ContactForm() {
           disabled={isSubmitting}
           className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-emerald-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-700 disabled:cursor-not-allowed disabled:opacity-70"
         >
-          {isSubmitting ? "Enviando..." : "Enviar solicitud"}
+          {isSubmitting ? "Enviando..." : "Enviar consulta técnica"}
           {!isSubmitting ? <ArrowRight className="h-4 w-4" /> : null}
         </button>
 

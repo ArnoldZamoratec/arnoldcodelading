@@ -10,16 +10,16 @@ import { ServicesSection } from "@/components/sections/services";
 export const metadata: Metadata = {
   title: "Servicios",
   description:
-    "Arquitectura de software, auditoría técnica, modernización y liderazgo CTO fractional para equipos de producto.",
+    "Revisión de arquitectura, auditoría de código y liderazgo técnico fractional con entregables y alcance definidos para productos en producción.",
 };
 
 export default function ServicesPage() {
   return (
     <main>
       <PageIntro
-        eyebrow="Servicios de ingeniería"
-        title="Intervención técnica senior, enfocada en lo que mueve el negocio."
-        description="Trabajo directamente con tu equipo para entender el contexto, reducir incertidumbre y convertir problemas técnicos en decisiones y entregas concretas."
+        eyebrow="Revisión · arquitectura · liderazgo técnico"
+        title="Contrata una intervención por el problema que necesitas resolver."
+        description="Puedes encargar el mapa de dependencias de un flujo, una auditoría de código con hallazgos reproducibles o acompañamiento para tomar y ejecutar decisiones técnicas."
       />
       <ServicesSection />
       <ProblemsSection />
@@ -32,10 +32,10 @@ export default function ServicesPage() {
             </p>
             <ul className="mt-5 grid gap-3 text-sm text-[#3f4941] sm:grid-cols-2">
               {[
-                "Un diagnóstico basado en tu contexto real",
-                "Decisiones documentadas y priorizadas",
-                "Un plan que contempla riesgo y capacidad",
-                "Transferencia de criterio al equipo",
+                "Flujos críticos y dependencias identificados",
+                "Hallazgos con contexto y evidencia",
+                "Opciones comparadas por riesgo y coste",
+                "Backlog con orden y criterios de aceptación",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2">
                   <CheckCircle2

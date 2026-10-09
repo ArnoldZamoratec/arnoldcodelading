@@ -9,13 +9,13 @@ import { AboutSection } from "@/components/sections/about";
 export const metadata: Metadata = {
   title: "Sobre mí",
   description:
-    "Conoce a Arnold: ingeniero senior enfocado en arquitectura, modernización y liderazgo técnico para empresas de producto.",
+    "Conoce a Arnold Huaman, consultor de ingeniería de software. Trabajo directamente con el equipo en revisión técnica, arquitectura y ejecución.",
 };
 
 const workingValues = [
-  "Trabajo directamente con el equipo que opera el producto.",
-  "Explico los trade-offs con claridad y sin vender complejidad.",
-  "Mido el éxito por mejoras que el negocio y el equipo pueden sostener.",
+  "Reviso el cambio con quien mantiene el módulo y con quien recibe el impacto en producto u operaciones.",
+  "Documento opciones, dependencias y riesgos para que la decisión no quede solo en una conversación.",
+  "Si acordamos implementar, trabajo sobre cambios verificables y dejo al equipo el contexto para mantenerlos.",
 ];
 
 export default function AboutPage() {
@@ -23,8 +23,8 @@ export default function AboutPage() {
     <main>
       <PageIntro
         eyebrow="Sobre ARNOLDCODE"
-        title="Senior por experiencia. Cercano en la colaboración."
-        description="Una consultoría técnica boutique liderada por Arnold: intervención directa, criterio de ingeniería y foco constante en el contexto de negocio."
+        title="Soy Arnold Huaman. Trabajo directamente en el sistema y con el equipo."
+        description="ARNOLDCODE es mi práctica de consultoría de ingeniería. Participo en la revisión técnica y en las decisiones; no delego el diagnóstico a un equipo comercial."
       />
       <AboutSection />
 
@@ -35,7 +35,7 @@ export default function AboutPage() {
               Cómo trabajo
             </p>
             <h2 className="mt-4 text-3xl font-semibold tracking-[-0.05em] text-[#202720] md:text-4xl">
-              Criterio experto, colaboración sin capas.
+              Reviso el sistema junto a quienes lo mantienen.
             </h2>
           </div>
           <ul className="space-y-4">
@@ -57,13 +57,13 @@ export default function AboutPage() {
 
       <section className="mx-auto max-w-7xl px-6 py-16 md:px-10 lg:px-12">
         <p className="max-w-3xl text-2xl font-medium leading-relaxed tracking-[-0.03em] text-[#3f4941] md:text-4xl">
-          “{landingCopy.about.philosophy}”
+          {landingCopy.about.philosophy}
         </p>
         <Link
           href="/contacto#contact"
           className="mt-8 inline-flex items-center gap-2 rounded-full bg-emerald-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-800"
         >
-          Hablemos de tu equipo
+          Enviar un problema para revisar
           <ArrowRight aria-hidden="true" className="h-4 w-4" />
         </Link>
       </section>

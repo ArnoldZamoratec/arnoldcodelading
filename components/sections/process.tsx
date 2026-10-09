@@ -19,8 +19,8 @@ export function ProcessSection() {
               <div className="mb-4 text-sm font-medium uppercase tracking-[0.16em] text-emerald-800">{step.number}</div>
               <h3 className="text-xl font-semibold text-[#202720]">{step.title}</h3>
               <p className="mt-4 text-base leading-7 text-[#5f685f]">{step.description}</p>
-              <div className="mt-6 inline-flex rounded-full border border-[#e5e1d7] bg-[#f4f1e9] px-3 py-1 text-xs uppercase tracking-[0.14em] text-[#5f685f]">
-                {step.duration}
+              <div className="mt-6 inline-flex rounded-full border border-[#e5e1d7] bg-[#f4f1e9] px-3 py-1 text-xs leading-5 text-[#5f685f]">
+                {step.handoff}
               </div>
             </article>
           ))}

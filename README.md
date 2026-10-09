@@ -1,6 +1,6 @@
 # ARNOLDCODE Landing Page
 
-Landing page para consultoría técnica boutique enfocada en arquitectura, auditoría, CTO fractional y modernización legacy.
+Sitio corporativo multipágina de ARNOLDCODE, enfocado en revisión de arquitectura y código, modernización incremental y liderazgo técnico para productos de software en producción.
 
 ## Páginas del sitio
 

@@ -64,7 +64,7 @@ export function MobileNavigation() {
           onClick={closeMenu}
           className="mt-1 rounded-xl bg-emerald-700 px-3 py-2 font-medium text-white"
         >
-          Agendar llamada
+          Describir el problema
         </Link>
       </nav>
     </details>

@@ -51,7 +51,7 @@ export function HeroSection() {
               {hero.trust_label}
             </p>
             <div className="mt-3 flex flex-wrap gap-2">
-              {["Arquitectura", "Estrategia técnica", "Ejecución directa"].map((item) => (
+              {["Código en producción", "Dependencias", "Riesgo de cambios"].map((item) => (
                 <span
                   key={item}
                   className="rounded-full border border-[#e2ded3] bg-white/70 px-3 py-1.5 text-sm text-[#3f4941]"
@@ -72,19 +72,19 @@ export function HeroSection() {
           <div className="rounded-3xl border border-[#e5e1d7] bg-white/70 p-5 shadow-xl shadow-[#766f5e]/10">
             <div className="rounded-2xl border border-[#e5e1d7] bg-[#fffdf8] p-5">
               <div className="mb-5 flex items-center justify-between text-xs uppercase tracking-[0.18em] text-[#687168]">
-                <span>Intervención técnica</span>
+                <span>De problema a plan ejecutable</span>
                 <span className="rounded-full border border-emerald-700/20 bg-emerald-50 px-2 py-1 text-emerald-800">
-                  ARNOLDCODE
+                  Trabajo con Arnold Huaman
                 </span>
               </div>
               <h2 className="max-w-sm text-2xl font-semibold tracking-[-0.04em] text-[#202720]">
-                Claridad para decidir. Ingeniería para ejecutar.
+                Del cambio que se atasca a una intervención concreta.
               </h2>
               <div className="mt-7 space-y-3">
                 {[
                   { step: "01", label: "Entender el contexto", detail: "Producto · equipo · operación" },
-                  { step: "02", label: "Priorizar con criterio", detail: "Impacto · riesgo · capacidad" },
-                  { step: "03", label: "Ejecutar en conjunto", detail: "Decisiones · cambios · transferencia" },
+                  { step: "02", label: "Ordenar el trabajo", detail: "Impacto · riesgo · dependencias" },
+                  { step: "03", label: "Acordar el siguiente cambio", detail: "Responsable · alcance · validación" },
                 ].map((item) => (
                   <div
                     key={item.step}

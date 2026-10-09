@@ -26,11 +26,11 @@ export const metadata: Metadata = {
     template: "%s | ARNOLDCODE",
   },
   description:
-    "Consultoría técnica boutique para startups, PYMEs y equipos con deuda técnica crítica.",
+    "Revisión de arquitectura y código, modernización incremental y liderazgo técnico para productos de software en producción.",
   openGraph: {
     title: "ARNOLDCODE | Arquitectura y liderazgo técnico",
     description:
-      "Arquitectura y liderazgo técnico para equipos que necesitan recuperar velocidad y claridad.",
+      "Revisión de código y arquitectura para localizar qué frena un cambio en productos de software en producción.",
     url: "https://arnoldcode.dev",
     siteName: "ARNOLDCODE",
     type: "website",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "ARNOLDCODE",
-    description: "Arquitectura y liderazgo técnico para equipos con presión.",
+    description: "Ingeniería de software y arquitectura para productos en producción.",
   },
 };
 
@@ -60,7 +60,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               name: "ARNOLDCODE",
               url: "https://arnoldcode.dev",
               description:
-                "Consultoría técnica boutique en arquitectura de software, auditoría técnica, modernización y liderazgo CTO fractional.",
+                "Revisión de arquitectura y código, modernización incremental y liderazgo técnico para productos de software en producción.",
               serviceType: [
                 "Arquitectura de software",
                 "Auditoría técnica",

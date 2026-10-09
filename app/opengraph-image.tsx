@@ -27,10 +27,10 @@ export default function OG() {
           ARNOLDCODE
         </div>
         <div style={{ fontSize: 72, fontWeight: 700, lineHeight: 1.05 }}>
-          Arquitectura y liderazgo técnico para equipos que no pueden fallar.
+          Ingeniería para productos de software en producción.
         </div>
         <div style={{ fontSize: 30, marginTop: 28, color: "#5f685f" }}>
-          Deuda técnica, delivery y decisiones con criterio.
+          Arquitectura, código y entrega para productos en producción.
         </div>
       </div>
     ),

@@ -4,7 +4,7 @@ export function CollaborationPrinciples() {
       <div className="max-w-3xl">
         <p className="text-sm font-medium uppercase tracking-[0.18em] text-emerald-800">Forma de colaboración</p>
         <h2 className="mt-4 text-3xl font-semibold tracking-[-0.05em] text-[#202720] md:text-5xl">
-          Trabajo directo, decisiones claras y transferencia al equipo.
+          La revisión termina en artefactos que el equipo puede usar.
         </h2>
       </div>
 
@@ -13,17 +13,17 @@ export function CollaborationPrinciples() {
           {
             title: "Acceso directo",
             description:
-              "Trabajas con la persona que analiza el contexto y participa en las decisiones, sin capas comerciales entre medio.",
+              "Arnold participa en la revisión del repositorio y conversa con quienes desarrollan, despliegan y atienden las incidencias.",
           },
           {
             title: "Recomendaciones accionables",
             description:
-              "Cada propuesta considera el riesgo, la capacidad del equipo y las prioridades actuales del producto.",
+              "Cada hallazgo incluye el flujo afectado, el riesgo observado y una opción de corrección que el equipo puede estimar.",
           },
           {
             title: "Conocimiento compartido",
             description:
-              "El equipo participa en las decisiones y recibe documentación para poder sostener el trabajo realizado.",
+              "Las decisiones y sus trade-offs quedan registrados y se explican a las personas que mantendrán el sistema.",
           },
         ].map((item) => (
           <article

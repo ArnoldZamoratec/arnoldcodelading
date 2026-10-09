@@ -72,9 +72,6 @@ export function HeroSection() {
             <div className="rounded-2xl border border-[#e5e1d7] bg-[#fffdf8] p-5">
               <div className="mb-5 flex items-center justify-between text-xs uppercase tracking-[0.18em] text-[#687168]">
                 <span>De problema a plan ejecutable</span>
-                <span className="rounded-full border border-emerald-700/20 bg-emerald-50 px-2 py-1 text-emerald-800">
-                  Trabajo con Arnold Huaman
-                </span>
               </div>
               <h2 className="max-w-sm text-2xl font-semibold tracking-[-0.04em] text-[#202720]">
                 Del cambio que se atasca a una intervención concreta.

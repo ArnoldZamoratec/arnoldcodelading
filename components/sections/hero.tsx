@@ -50,7 +50,7 @@ export function HeroSection() {
               {hero.trust_label}
             </p>
             <div className="mt-3 flex flex-wrap gap-2">
-              {["Código en producción", "Dependencias", "Riesgo de cambios"].map((item) => (
+              {["Petición", "Llamadas entre módulos", "Despliegue"].map((item) => (
                 <span
                   key={item}
                   className="rounded-full border border-[#e2ded3] bg-white/70 px-3 py-1.5 text-sm text-[#3f4941]"
@@ -71,16 +71,16 @@ export function HeroSection() {
           <div className="rounded-3xl border border-[#e5e1d7] bg-white/70 p-5 shadow-xl shadow-[#766f5e]/10">
             <div className="rounded-2xl border border-[#e5e1d7] bg-[#fffdf8] p-5">
               <div className="mb-5 flex items-center justify-between text-xs uppercase tracking-[0.18em] text-[#687168]">
-                <span>De problema a plan ejecutable</span>
+                <span>Recorrido de un cambio</span>
               </div>
               <h2 className="max-w-sm text-2xl font-semibold tracking-[-0.04em] text-[#202720]">
-                Del cambio que se atasca a una intervención concreta.
+                De la solicitud al punto exacto donde se interrumpe.
               </h2>
               <div className="mt-7 space-y-3">
                 {[
-                  { step: "01", label: "Entender el contexto", detail: "Producto · equipo · operación" },
-                  { step: "02", label: "Ordenar el trabajo", detail: "Impacto · riesgo · dependencias" },
-                  { step: "03", label: "Acordar el siguiente cambio", detail: "Responsable · alcance · validación" },
+                  { step: "01", label: "Reproducir la solicitud", detail: "Entrada · resultado esperado · error observado" },
+                  { step: "02", label: "Seguir las llamadas", detail: "Módulos · APIs · consultas · eventos" },
+                  { step: "03", label: "Definir la corrección", detail: "Cambio acotado · prueba · criterio de salida" },
                 ].map((item) => (
                   <div
                     key={item.step}
@@ -98,7 +98,7 @@ export function HeroSection() {
               </div>
               <div className="mt-5 flex items-center gap-2 text-sm font-medium text-[#3f4941]">
                 <Check className="h-4 w-4 text-emerald-700" />
-                Trabajo directo con el equipo
+                Entrega: hallazgos vinculados al flujo revisado
               </div>
             </div>
           </div>

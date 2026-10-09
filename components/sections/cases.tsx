@@ -11,8 +11,8 @@ export function CasesSection() {
           {cases.title}
         </h2>
         <p className="mt-4 leading-7 text-[#5f685f]">
-          Ejemplos ilustrativos del tipo de retos que se pueden abordar; no son
-          casos de clientes ni resultados garantizados.
+          Son situaciones hipotéticas para mostrar cómo se delimita una
+          revisión. No corresponden a clientes ni describen resultados reales.
         </p>
       </div>
 
@@ -21,15 +21,15 @@ export function CasesSection() {
           <article key={`${item.problem}-${item.result}`} className="rounded-3xl border border-[#e5e1d7] bg-[#fffdf8] p-6 shadow-sm shadow-[#766f5e]/5 md:p-8">
             <div className="grid gap-5 md:grid-cols-3">
               <div>
-                <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#687168]">Problema</p>
+                <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#687168]">Situación</p>
                 <p className="mt-3 text-base leading-7 text-[#3f4941]">{item.problem}</p>
               </div>
               <div>
-                <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#687168]">Solución</p>
+                <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#687168]">Qué se revisaría</p>
                 <p className="mt-3 text-base leading-7 text-[#3f4941]">{item.solution}</p>
               </div>
               <div>
-                <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#687168]">Objetivo</p>
+                <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#687168]">Ejemplo de entregable</p>
                 <p className="mt-3 text-base leading-7 text-emerald-800">{item.result}</p>
               </div>
             </div>

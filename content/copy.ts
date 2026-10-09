@@ -33,59 +33,59 @@ export const positioning = {
 
 export const landingCopy = {
   hero: {
-    headline_v1: "Cada cambio cuesta más de lo que debería. Encuentra el punto que lo frena.",
-    headline_v2: "Menos cambios frágiles. Más entregas que el equipo puede sostener.",
-    headline_v3: "Moderniza el producto por etapas, sin parar lo que ya funciona.",
+    headline_v1: "¿Un cambio exige tocar varios servicios? Localiza el acoplamiento antes de reescribir.",
+    headline_v2: "Sigue el cambio desde la petición hasta el código que lo bloquea.",
+    headline_v3: "Separa el fallo urgente de la deuda que lo vuelve a producir.",
     subheadline:
-      "ARNOLDCODE trabaja con startups y empresas de producto que ya están en producción: revisamos arquitectura, código y forma de entrega para definir qué está frenando al equipo y corregirlo por etapas.",
-    cta_primary: "Revisar mi caso",
-    cta_secondary: "Ver servicios",
-    trust_label: "El trabajo se enfoca en",
+      "Reviso el recorrido de una funcionalidad por módulos, APIs, datos, pruebas y despliegues. Recibes dependencias identificadas, riesgos con evidencia y opciones de cambio ordenadas por alcance.",
+    cta_primary: "Enviar el cambio bloqueado",
+    cta_secondary: "Ver qué reviso",
+    trust_label: "En cada revisión sigo",
   },
   home: {
-    pages_title: "Elige el problema que necesitas resolver",
+    pages_title: "Revisa el alcance antes de decidir",
     pages_description:
-      "Cada servicio describe cuándo conviene intervenir, qué revisamos y qué queda en manos de tu equipo.",
+      "Consulta qué incluye cada intervención, cómo se documenta un hallazgo y qué información conviene preparar.",
     pages: [
       {
         title: "Arquitectura y auditoría",
-        eyebrow: "Decidir qué cambiar",
+        eyebrow: "Servicios y entregables",
         description:
-          "Ubica dependencias, riesgos y decisiones que hacen costoso cada cambio; recibe hallazgos priorizados y una ruta técnica.",
+          "Compara revisión de arquitectura, auditoría de código y liderazgo técnico: alcance, entregables y cuándo aplica cada opción.",
         href: "/servicios",
       },
       {
-        title: "Plan de intervención",
-        eyebrow: "Saber cómo avanzamos",
+        title: "Método de revisión",
+        eyebrow: "Del síntoma a la causa",
         description:
-          "Conoce las etapas: acceso y contexto, revisión del sistema, devolución de hallazgos y acompañamiento de los cambios acordados.",
+          "Sigue un cambio por sus llamadas, datos, pruebas y despliegue; conoce qué se valida antes de recomendar una modificación.",
         href: "/metodologia",
       },
       {
-        title: "Problemas habituales",
-        eyebrow: "Comparar tu situación",
+        title: "Escenarios técnicos",
+        eyebrow: "Ejemplos, no clientes",
         description:
-          "Consulta escenarios de dependencias, código legacy y falta de dirección técnica, identificados como ejemplos y no como casos de clientes.",
+          "Revisa cómo se delimitaría una regla duplicada, un módulo sin pruebas o prioridades de producto y operación en conflicto.",
         href: "/casos",
       },
       {
         title: "Arnold Huaman",
-        eyebrow: "Quién trabaja contigo",
+        eyebrow: "Responsable del trabajo",
         description:
-          "Conoce el enfoque de trabajo directo: revisión con el equipo, explicación de trade-offs y documentación de las decisiones.",
+          "Conoce quién revisa el sistema, conversa con las personas que lo mantienen y registra las decisiones técnicas.",
         href: "/sobre-mi",
       },
       {
-        title: "Cuéntame el contexto",
-        eyebrow: "Siguiente paso",
+        title: "Enviar un problema técnico",
+        eyebrow: "Alcance inicial",
         description:
-          "Describe qué parte de la entrega se atasca, qué sistema está involucrado y qué resultado necesita el negocio.",
+          "Indica qué se intentaba entregar, qué módulos participaron, qué ocurrió y cómo afecta a usuarios u operación.",
         href: "/contacto",
       },
     ],
-    cta_title: "No hace falta llegar con una solución decidida.",
+    cta_title: "Empieza por el cambio que no pudo salir.",
     cta_description:
-      "Trae un ejemplo reciente: un cambio que se demoró, una incidencia recurrente o una migración pendiente. Empezamos por ese caso y sus restricciones.",
+      "Describe el comportamiento esperado, el resultado observado y las partes del sistema involucradas. No compartas accesos, datos personales ni código confidencial.",
   },
   trust_bar: {
     items: ["Cambios que cruzan servicios", "Incidencias repetidas", "Migraciones aplazadas", "Decisiones sin responsable", "Entrega impredecible"],
@@ -166,22 +166,22 @@ export const landingCopy = {
     stack_highlight: "Trabajo con TypeScript, Next.js, Python y servicios cloud cuando encajan con el sistema existente. La recomendación parte del repositorio y la operación, no de una lista fija de tecnologías.",
   },
   cases: {
-    title: "Tres situaciones para reconocer el problema, no casos de clientes",
+    title: "Qué rastrear y qué documentar en cada escenario",
     items: [
       {
         problem: "Al modificar una regla de negocio, el equipo debe coordinar cambios y despliegues en varios servicios.",
         solution: "Seguir el flujo de la regla, identificar duplicación y contratos, y acordar qué límite conviene estabilizar primero.",
-        result: "Entregable posible: mapa de dependencias y una secuencia de cambios pequeños con criterios de validación.",
+        result: "Mapa de llamadas afectadas y orden de cambios con pruebas para cada etapa.",
       },
       {
         problem: "Un módulo antiguo contiene lógica crítica que casi nadie se atreve a modificar; las pruebas no cubren sus rutas principales.",
         solution: "Identificar entradas, reglas y efectos observables; añadir verificaciones donde aporten seguridad antes de reemplazar componentes.",
-        result: "Entregable posible: límites conocidos, riesgos explícitos y una ruta de modernización que no exige reescribir todo a la vez.",
+        result: "Rutas sin cobertura identificadas, pruebas de caracterización y límites para una migración gradual.",
       },
       {
         problem: "Producto pide funcionalidades, operaciones reporta incidentes y el equipo no tiene una regla común para priorizar.",
         solution: "Revisar impacto, urgencia, riesgo y dependencias; registrar quién decide y qué señal hará revisar la decisión.",
-        result: "Entregable posible: criterios de prioridad compartidos y un registro de decisiones técnicas con responsables.",
+        result: "Criterios de prioridad acordados y decisiones registradas con responsable y fecha de revisión.",
       },
     ],
   },

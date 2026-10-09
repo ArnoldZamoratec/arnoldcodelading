@@ -18,8 +18,8 @@ export default function ServicesPage() {
     <main>
       <PageIntro
         eyebrow="Revisión · arquitectura · liderazgo técnico"
-        title="Contrata una intervención por el problema que necesitas resolver."
-        description="Puedes encargar el mapa de dependencias de un flujo, una auditoría de código con hallazgos reproducibles o acompañamiento para tomar y ejecutar decisiones técnicas."
+        title="Mapa de arquitectura, auditoría de código o dirección técnica."
+        description="Elige según lo que está bloqueado: dependencias difíciles de cambiar, fallos que se repiten o decisiones técnicas sin responsable. Cada opción define su alcance y entregables."
       />
       <ServicesSection />
       <ProblemsSection />

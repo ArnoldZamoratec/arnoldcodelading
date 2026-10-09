@@ -9,8 +9,8 @@ export function AboutSection() {
       <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
         <div className="relative min-h-[420px] overflow-hidden rounded-[2rem] border border-[#e5e1d7] bg-[#e8e4da]">
           <Image
-            src="/arnold-profile.png"
-            alt="Arnold Huaman Zamora en su espacio de trabajo"
+            src="/arnold-profile.jpg"
+            alt="Arnold Huaman en su espacio de trabajo"
             fill
             sizes="(max-width: 1024px) 100vw, 45vw"
             className="object-cover object-center"
@@ -25,7 +25,7 @@ export function AboutSection() {
               Fundador · ARNOLDCODE
             </div>
             <h2 className="text-4xl font-bold tracking-[-0.06em] text-white md:text-5xl">
-              Arnold Huaman Zamora
+              Arnold Huaman
             </h2>
           </div>
         </div>

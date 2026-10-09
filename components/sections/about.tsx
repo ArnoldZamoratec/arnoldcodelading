@@ -18,12 +18,9 @@ export function AboutSection() {
           />
           <div
             aria-hidden="true"
-            className="absolute inset-0 bg-gradient-to-t from-[#14201a]/85 via-[#14201a]/10 to-transparent"
+            className="absolute inset-0 bg-gradient-to-t from-[#171717]/80 via-[#171717]/5 to-transparent"
           />
           <div className="absolute inset-x-0 bottom-0 p-7 md:p-9">
-            <div className="mb-4 inline-flex rounded-full border border-white/35 bg-white/15 px-3 py-1 text-xs font-medium uppercase tracking-[0.12em] text-white backdrop-blur-sm">
-              Fundador · ARNOLDCODE
-            </div>
             <h2 className="text-4xl font-bold tracking-[-0.06em] text-white md:text-5xl">
               Arnold Huaman
             </h2>

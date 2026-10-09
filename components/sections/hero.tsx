@@ -13,7 +13,6 @@ export function HeroSection() {
 
   return (
     <section className="relative overflow-hidden border-b border-[#e5e1d7]">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(21,128,61,0.1),transparent_48%)]" aria-hidden="true" />
       <div className="mx-auto grid max-w-7xl gap-16 px-6 pb-20 pt-12 md:px-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-center lg:px-12 lg:pb-28 lg:pt-16">
         <motion.div
           initial={{ opacity: 0, y: 16 }}

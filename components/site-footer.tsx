@@ -52,7 +52,7 @@ export function SiteFooter() {
           ))}
         </nav>
 
-        <p className="text-xs text-[#687168] md:col-span-2">
+        <p className="text-xs text-[#5f685f] md:col-span-2">
           © ARNOLDCODE. Consultoría de ingeniería de software.
         </p>
       </div>

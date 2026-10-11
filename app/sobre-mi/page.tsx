@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: "Sobre mí",
   description:
     "Conoce a Arnold Huaman, consultor de ingeniería de software. Trabajo directamente con el equipo en revisión técnica, arquitectura y ejecución.",
+  alternates: { canonical: "/sobre-mi" },
 };
 
 const workingValues = [
@@ -61,6 +62,7 @@ export default function AboutPage() {
         </p>
         <Link
           href="/contacto#contact"
+          data-cta="about_footer"
           className="mt-8 inline-flex items-center gap-2 rounded-full bg-emerald-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-800"
         >
           Enviar un problema para revisar

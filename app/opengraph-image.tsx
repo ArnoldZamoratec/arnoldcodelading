@@ -7,6 +7,8 @@ export const size = {
 
 export const contentType = "image/png";
 
+export const alt = "ARNOLDCODE: arquitectura y liderazgo técnico para productos en producción";
+
 export default function OG() {
   return new ImageResponse(
     (

@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "Escenarios de trabajo",
   description:
     "Escenarios ilustrativos de dependencias entre servicios, módulos legacy y prioridades técnicas. No se presentan como proyectos de clientes.",
+  alternates: { canonical: "/casos" },
 };
 
 export default function CasesPage() {
@@ -32,6 +33,7 @@ export default function CasesPage() {
           </p>
           <a
             href="/contacto#contact"
+            data-cta="cases_footer"
             className="mt-6 inline-flex rounded-full bg-emerald-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-800"
           >
             Enviar los detalles del problema

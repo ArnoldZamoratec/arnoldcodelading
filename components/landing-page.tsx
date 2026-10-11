@@ -70,6 +70,7 @@ export function LandingPage() {
           </div>
           <Link
             href="/contacto#contact"
+            data-cta="home_footer"
             className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-emerald-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-800 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-800"
           >
             {landingCopy.hero.cta_primary}

@@ -70,6 +70,7 @@ export function MobileNavigation() {
         ))}
         <Link
           href="/contacto#contact"
+          data-cta="mobile_menu"
           onClick={closeMenu}
           className="mt-1 rounded-xl bg-[#202720] px-3 py-2.5 font-semibold text-white transition hover:bg-[#00b8bf] hover:text-[#10282a]"
         >

@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Contacto",
   description:
     "Describe una entrega demorada, una incidencia repetida o una decisión de arquitectura pendiente. Arnold revisará la solicitud y el contexto.",
+  alternates: { canonical: "/contacto" },
 };
 
 export default function ContactPage() {

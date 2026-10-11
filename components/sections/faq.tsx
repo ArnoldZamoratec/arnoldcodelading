@@ -2,9 +2,24 @@ import { landingCopy } from "@/content/copy";
 
 export function FAQSection() {
   const { faq } = landingCopy;
+  const faqStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faq.items.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: item.answer },
+    })),
+  };
 
   return (
     <section className="mx-auto max-w-5xl px-6 py-20 md:px-10 lg:px-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqStructuredData).replace(/</g, "\\u003c"),
+        }}
+      />
       <div className="text-center">
         <p className="text-sm font-medium uppercase tracking-[0.18em] text-emerald-800">FAQ</p>
         <h2 className="mt-4 text-3xl font-semibold tracking-[-0.05em] text-[#202720] md:text-5xl">

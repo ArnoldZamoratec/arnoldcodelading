@@ -1,8 +1,5 @@
-"use client";
-
 import Link from "next/link";
 import { ArrowRight, Check, Play } from "lucide-react";
-import { motion } from "framer-motion";
 
 import { landingCopy } from "@/content/copy";
 import { getCalendlyUrl } from "@/lib/calendly";
@@ -14,12 +11,7 @@ export function HeroSection() {
   return (
     <section className="relative overflow-hidden border-b border-[#e5e1d7]">
       <div className="mx-auto grid max-w-7xl gap-16 px-6 pb-20 pt-12 md:px-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-center lg:px-12 lg:pb-28 lg:pt-16">
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
-          className="relative z-10"
-        >
+        <div className="relative z-10">
           <h1 className="max-w-xl text-[clamp(1.875rem,8vw,3rem)] font-semibold tracking-[-0.06em] text-[#202720] sm:text-5xl lg:text-7xl">
             {hero.headline_v1}
           </h1>
@@ -31,16 +23,18 @@ export function HeroSection() {
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <Link
               href={calendlyUrl ? "/contacto#calendar" : "/contacto#contact"}
+              data-cta="hero_primary"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-emerald-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-800"
             >
               {hero.cta_primary}
-              <ArrowRight className="h-4 w-4" />
+              <ArrowRight aria-hidden="true" className="h-4 w-4" />
             </Link>
             <Link
               href="/servicios"
+              data-cta="hero_secondary"
               className="inline-flex items-center justify-center gap-2 rounded-full border border-[#d7d3c9] bg-white/70 px-5 py-3 text-sm font-semibold text-[#202720] transition hover:border-emerald-700/40 hover:bg-white"
             >
-              <Play className="h-4 w-4" />
+              <Play aria-hidden="true" className="h-4 w-4" />
               {hero.cta_secondary}
             </Link>
           </div>
@@ -60,14 +54,9 @@ export function HeroSection() {
               ))}
             </div>
           </div>
-        </motion.div>
+        </div>
 
-        <motion.div
-          initial={{ opacity: 0, scale: 0.96 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
-          className="relative z-10"
-        >
+        <div className="hero-card-enter relative z-10">
           <div className="rounded-3xl border border-[#e5e1d7] bg-white/70 p-5 shadow-xl shadow-[#766f5e]/10">
             <div className="rounded-2xl border border-[#e5e1d7] bg-[#fffdf8] p-5">
               <div className="mb-5 flex items-center justify-between text-xs uppercase tracking-[0.18em] text-[#687168]">
@@ -97,12 +86,12 @@ export function HeroSection() {
                 ))}
               </div>
               <div className="mt-5 flex items-center gap-2 text-sm font-medium text-[#3f4941]">
-                <Check className="h-4 w-4 text-emerald-700" />
+                <Check aria-hidden="true" className="h-4 w-4 text-emerald-700" />
                 Entrega: hallazgos vinculados al flujo revisado
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

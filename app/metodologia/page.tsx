@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Metodología",
   description:
     "Cómo pasamos de un cambio o incidencia concreta a una revisión del flujo, decisiones registradas y una intervención técnica acordada.",
+  alternates: { canonical: "/metodologia" },
 };
 
 const principles = [
@@ -74,6 +75,7 @@ export default function MethodologyPage() {
       <section className="mx-auto max-w-7xl px-6 pb-20 md:px-10 lg:px-12">
         <Link
           href="/contacto#contact"
+          data-cta="methodology_footer"
           className="inline-flex items-center gap-2 rounded-full bg-emerald-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-800"
         >
           Enviar un flujo para revisar

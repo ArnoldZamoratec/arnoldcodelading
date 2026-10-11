@@ -18,7 +18,7 @@ export function SiteHeader() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 border-b border-[#e5e1d7] bg-[#fbfaf5]/95 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-[#e5e1d7] bg-[#fbfaf5]">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-2.5 sm:px-6 md:px-10 lg:px-12">
         <Link
           href="/"
@@ -30,7 +30,7 @@ export function SiteHeader() {
             alt="ArnoldCode"
             width={310}
             height={48}
-            priority
+            preload
             className="h-auto w-full"
           />
         </Link>
@@ -59,6 +59,7 @@ export function SiteHeader() {
 
         <Link
           href="/contacto#contact"
+          data-cta="header"
           className="hidden items-center gap-2 rounded-xl bg-[#202720] px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-[#00b8bf] hover:text-[#10282a] sm:inline-flex"
         >
           Describir el problema

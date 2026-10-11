@@ -6,12 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "lhci": "lhci autorun --config=./lighthouserc.cjs"
   },
   "dependencies": {
-    "@hookform/resolvers": "^5.9.1",
+    "@vercel/analytics": "^2.0.1",
+    "@vercel/speed-insights": "^2.0.0",
     "clsx": "^2.1.1",
-    "framer-motion": "^14.0.0",
     "lucide-react": "^1.54.0",
     "next": "16.4.0",
     "react": "19.3.0",
@@ -22,6 +23,7 @@
     "zod": "^4.6.5"
   },
   "devDependencies": {
+    "@lhci/cli": "^0.15.1",
     "@tailwindcss/turbopack": "^4",
     "@types/node": "^20",
     "@types/react": "^19",

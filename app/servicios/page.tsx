@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: "Servicios",
   description:
     "Revisión de arquitectura, auditoría de código y liderazgo técnico fractional con entregables y alcance definidos para productos en producción.",
+  alternates: { canonical: "/servicios" },
 };
 
 export default function ServicesPage() {
@@ -49,6 +50,7 @@ export default function ServicesPage() {
           </div>
           <Link
             href="/contacto#contact"
+            data-cta="services_footer"
             className="inline-flex items-center justify-center gap-2 rounded-full bg-emerald-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-800"
           >
             {landingCopy.hero.cta_primary}
